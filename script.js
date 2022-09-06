@@ -14,7 +14,7 @@ $("#pick").click(function() {
 
 
   //looping through participants 
-  var i = 0;
+  //var i = 0;
   var startTime = new Date().getTime();
   var interval = setInterval(function(){
     //closing interval after 5 seconds (bgm is 5 seconds)
@@ -23,7 +23,7 @@ $("#pick").click(function() {
       return;
   }
     //displaying array elements every 1/15th second
-    $("#winner").text(nameArray[i++]);
+    $("#winner").text(nameArray[Math.floor(Math.random()*nameArray.length)]);
     if (i == nameArray.length) i=0;
 
   },1000/15);
