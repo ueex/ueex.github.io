@@ -9,8 +9,8 @@ html {
 }
 
 #winner {
-  color: white;
-  font-size: 100px; 
+  color: #FF7C36;
+  font-size: 65px; 
   z-index: 3;
   visibility: hidden;
   opacity: 0; 
@@ -18,7 +18,7 @@ html {
   transition: opacity 0.4s ease, visibility 0.4s ease;
   will-change: opacity;
   left: 50%;
-  top: 50%;
+  top: 65%;
   transform: translate(-50%, -50%);
 }
  
@@ -29,14 +29,14 @@ html {
 }
 
 #close {
-  height: 25px;
+  height: 35px;
   visibility: hidden;
   opacity: 0; 
   position: absolute;
   transition: opacity 0.5s ease, visibility 0.5s ease;
   will-change: opacity;
-  top: 40px;
-  right: 40px;
+  top: 75%;
+  left: 49%;
   z-index: 4;
   cursor: pointer;
 }
@@ -60,6 +60,9 @@ html {
   opacity: 0;
   transition: opacity 0.5s ease, visibility 0.5s ease;
   will-change: opacity, visibility;
+  background-image: url('Images/world_bg.jpg');
+  background-position: center;
+
 }
 
 #world.open {
@@ -72,6 +75,7 @@ html {
   background-image: url('Images/bg.png');
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   width: 100%; 
   height: 100vh;
   min-height: 700px;
